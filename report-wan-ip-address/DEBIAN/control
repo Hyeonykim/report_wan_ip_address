@@ -1,0 +1,5 @@
+Package: reportWanIpAddress
+Version: 1.0.0
+Maintainer: Hyeonykim <hyeonykim@gmail.com>
+Description: Report WAN IP Address
+Architecture: all

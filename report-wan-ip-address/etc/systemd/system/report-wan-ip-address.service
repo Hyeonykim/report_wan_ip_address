@@ -1,0 +1,13 @@
+[Unit]
+Description=Report WAN IP Address Service
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+EnvironmentFile=/etc/systemd/system.conf.d/10.default-env.conf
+ExecStart=/usr/local/share/report-wan-ip-address/reportWanIpAddress.py
+Restart=on-failure
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

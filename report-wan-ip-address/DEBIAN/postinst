@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+chmod 755 /etc/systemd/system/report-wan-ip-address.service
+chmod 755 /usr/local/share/report-wan-ip-address/reportWanIpAddress.py
+
+systemctl daemon-reload
+systemctl enable report-wan-ip-address.service
+systemctl start report-wan-ip-address.service
